@@ -1,0 +1,55 @@
+.title {
+  font-family: inherit;
+  font-weight: 700;
+  color: var(--color-white);
+
+  & > span {
+    color: var(--color-purple);
+  }
+}
+
+.title.one {
+  font-size: 2.375rem;
+}
+
+.title.two {
+  font-size: 1.75rem;
+}
+
+.title.three {
+  font-size: 1.375rem;
+}
+
+.title.four {
+  font-size: 1.125rem;
+}
+
+.paragraph {
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 1rem;
+  color: var(--color-grey);
+}
+
+.paragraph.sm {
+  font-size: 0.875rem;
+}
+
+.paragraph.pink {
+  color: var(--color-pink);
+}
+
+.link {
+  font-size: 1rem;
+  color: var(--color-grey);
+  font-weight: 500;
+}
+
+.link.sm {
+  font-size: 0.875rem;
+  font-weight: 400;
+}
+
+.link.white {
+  color: var(--color-white);
+}

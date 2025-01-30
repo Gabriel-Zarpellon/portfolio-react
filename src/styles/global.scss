@@ -1,0 +1,19 @@
+:root {
+  --color-purple: #623cea;
+  --color-white: #f8f9fa;
+  --color-grey: #868e96;
+  --color-pink: #ff577f;
+
+  --color-whatsapp: #50cf9a;
+  --color-facebook: #364fc7;
+  --color-linkedin: #0e76a8;
+  --color-new: #311e75;
+
+  --color-background1: #121214;
+  --color-background2: #0a0a0b;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: var(--color-background1);
+}

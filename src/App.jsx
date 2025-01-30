@@ -3,6 +3,7 @@ import { ContactSection } from "./components/ContactSection";
 import { Footer } from "./components/Footer";
 import { Header } from "./components/Header";
 import { ProjectSection } from "./components/ProjectSection";
+import "./styles/index.scss";
 
 function App() {
   return (

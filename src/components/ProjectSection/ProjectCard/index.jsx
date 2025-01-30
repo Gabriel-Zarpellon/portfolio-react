@@ -5,21 +5,21 @@ export function ProjectCard({ project, length, index }) {
   return (
     <li>
       <div>
-        <h2>{project.title}</h2>
+        <h2 className="title two">{project.title}</h2>
         {length == index ? <span>New</span> : null}
       </div>
       <div>
-        <p>Linguagens:</p>
-        <p>{project.language}</p>
+        <p className="paragraph sm">Linguagens:</p>
+        <p className="paragraph sm">{project.language}</p>
       </div>
       <div>
-        <p>{project.description}</p>
+        <p className="paragraph">{project.description}</p>
       </div>
       <div>
-        <a href={project.github}>
+        <a href={project.github} className="link">
           <IoLogoGithub size={21} /> Github Code
         </a>
-        <a href="#">
+        <a href="#" className="link">
           <FaShare size={21} /> Aplicação
         </a>
       </div>
