@@ -6,6 +6,4 @@ dinâmica de projetos e possui completa responsividade, adaptando-se perfeitamen
 
 Este projeto foi desenvolvido em React com o intuito de praticar habilidades e é composto de HTML e JavaScript, tendo sua estilização feita com o uso de SASS.
 
-## Deploy no Vercel
-
-[Link](https://kenziehub-gabriel-zarpellon.vercel.app/)
+## Visualizar deploy do [projeto no Vercel](https://portfolio-react-mu-ruby.vercel.app/)
