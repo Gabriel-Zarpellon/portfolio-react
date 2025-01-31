@@ -17,3 +17,7 @@ body {
   font-family: "Inter", sans-serif;
   background-color: var(--color-background1);
 }
+
+html {
+  scroll-behavior: smooth;
+}

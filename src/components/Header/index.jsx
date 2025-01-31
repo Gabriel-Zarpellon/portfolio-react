@@ -16,17 +16,17 @@ export function Header() {
             {isOpen ? <IoClose size={24} /> : <GiHamburgerMenu size={21} />}
           </button>
           <nav>
-            <a href="#">Home</a>
-            <a href="#">Projetos</a>
-            <a href="#">Contato</a>
+            <a href="#home">Home</a>
+            <a href="#projects">Projetos</a>
+            <a href="#contact">Contato</a>
             <a href="#">Mídias Digitais</a>
           </nav>
         </div>
       </div>
       <nav className={isOpen ? styles.open : styles.close}>
-        <a href="#">Home</a>
-        <a href="#">Projetos</a>
-        <a href="#">Contato</a>
+        <a href="#home">Home</a>
+        <a href="#projects">Projetos</a>
+        <a href="#contact">Contato</a>
         <a href="#">Mídias Digitais</a>
       </nav>
     </header>

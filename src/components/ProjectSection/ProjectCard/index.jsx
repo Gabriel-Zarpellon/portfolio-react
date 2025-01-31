@@ -1,21 +1,26 @@
 import { IoLogoGithub } from "react-icons/io";
 import { FaShare } from "react-icons/fa";
+import styles from "./style.module.scss";
 
-export function ProjectCard({ project, length, index }) {
+export function ProjectCard({ project }) {
   return (
-    <li>
-      <div>
+    <li className={styles.projectCard}>
+      <div className={styles.projectTitle}>
         <h2 className="title two">{project.title}</h2>
-        {length == index ? <span>New</span> : null}
+        {project.new ? <span>New</span> : null}
       </div>
-      <div>
+      <ul className={styles.languageBox}>
         <p className="paragraph sm">Linguagens:</p>
-        <p className="paragraph sm">{project.language}</p>
-      </div>
+        {project.languages.map((language, index) => (
+          <li key={index}>
+            <p className={`${styles.language} paragraph sm`}>{language}</p>
+          </li>
+        ))}
+      </ul>
       <div>
         <p className="paragraph">{project.description}</p>
       </div>
-      <div>
+      <div className={styles.projectLinks}>
         <a href={project.github} className="link">
           <IoLogoGithub size={21} /> Github Code
         </a>

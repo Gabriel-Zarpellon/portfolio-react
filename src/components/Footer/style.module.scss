@@ -1,0 +1,71 @@
+.footerBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  padding-block: 3.75rem;
+
+  & > div:first-child {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+
+    text-align: center;
+
+    .textBox {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+
+    & > img {
+      height: 69px;
+      width: 69px;
+    }
+  }
+
+  .iconBox {
+    display: flex;
+    gap: 1.375rem;
+  }
+
+  %icon {
+    height: 3rem;
+    width: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 150px;
+    color: var(--color-white);
+  }
+
+  .facebook {
+    @extend %icon;
+    background-color: var(--color-facebook);
+  }
+
+  .instagram {
+    @extend %icon;
+    background-color: var(--color-pink);
+  }
+
+  .linkedin {
+    @extend %icon;
+    background-color: var(--color-linkedin);
+  }
+
+  @media (min-width: 920px) {
+    flex-direction: row;
+    justify-content: space-between;
+
+    & > div:first-child {
+      flex-direction: row;
+
+      .textBox {
+        text-align: left;
+        gap: 1rem;
+      }
+    }
+  }
+}

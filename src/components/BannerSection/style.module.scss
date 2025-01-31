@@ -1,0 +1,77 @@
+.bannerSection {
+  border-bottom: 3px solid var(--color-white);
+
+  @media (min-width: 1320px) {
+    background-image: url("../../assets/BannerImg.png");
+    background-repeat: no-repeat;
+    background-position: right;
+  }
+}
+
+.bannerBox {
+  max-width: 607px;
+  display: flex;
+  flex-direction: column;
+  gap: 2.625rem;
+  padding-block: 3.25rem;
+
+  & > div:first-child {
+    display: flex;
+    align-items: center;
+    gap: 1.75rem;
+
+    & > img {
+      height: 46px;
+      width: 46px;
+    }
+
+    & > p {
+      color: #e9ecef;
+    }
+  }
+
+  .bannerBottom {
+    display: flex;
+    flex-direction: column;
+    gap: 2.625rem;
+  }
+
+  .linkBox {
+    display: flex;
+    gap: 1rem;
+
+    & > a:first-child {
+      width: 10rem;
+      height: 3rem;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      border-radius: 8px;
+      background-color: var(--color-purple);
+
+      &:hover {
+        filter: brightness(1.1);
+      }
+    }
+
+    & > a:last-child {
+      height: 3rem;
+      width: 3rem;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      border-radius: 150px;
+
+      background-color: var(--color-white);
+      color: var(--color-background1);
+    }
+  }
+
+  .skillIcons {
+    max-width: 80%;
+  }
+}

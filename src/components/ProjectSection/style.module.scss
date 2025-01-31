@@ -1,0 +1,26 @@
+.projectBox {
+  display: flex;
+  flex-direction: column;
+  gap: 4.375rem;
+  padding-block: 3.25rem;
+
+  & > div:first-child {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  & > ul {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3.75rem;
+  }
+
+  @media (min-width: 1320px) {
+    padding-bottom: 9.0625rem;
+
+    & > ul {
+      grid-template-columns: repeat(2, 2fr);
+    }
+  }
+}
